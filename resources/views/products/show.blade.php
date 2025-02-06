@@ -28,15 +28,7 @@
                         </thead>
                         <tbody>
                             @forelse ($students as $student)
-                            <tr>
-                                <td>{{$student->name}}</td>
-                                <td>{{$student->roll}}</td>
-                                <td>{{$student->phone}}</td>
-                                <td>{{$student->address}}</td>
-                                <td> <img width="50" height="" src="{{asset('photo')}}/{{$student->photo}}" alt="{{$student->name}}" srcset=""> </td>
-                               
-                                
-                            </tr>
+                          
                             @empty
                             @endforelse
                         </tbody>
